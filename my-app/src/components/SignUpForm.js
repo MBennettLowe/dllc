@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import CourseList from './CourseList';
 
     
  const SignUpForm = () => {
@@ -6,6 +7,8 @@ import React, { useState } from 'react';
    const [lastName, setLastName] = useState('');
    const [course, setCourse] = useState('');
    const [message, setMessage] = useState('');
+   
+
   //  const [count, setCount] = useState(0);
 
   //  const handleVisits = () => {
@@ -26,7 +29,7 @@ import React, { useState } from 'react';
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    setMessage(`Welcome ${firstName} ${lastName} 👋 , thanks for enrolling in: ${course} ⚛️!`);
+    setMessage(`Welcome ${firstName} ${lastName} 👋 , thanks for enrolling in:  ⚛️!`);
   };
 
   return (
@@ -56,13 +59,14 @@ import React, { useState } from 'react';
       <br />
 
       <label htmlFor="Course">Course: </label>
-      <input
+      <CourseList />
+      {/* <input
         type="select"
         id="course"
         name="course"
         value={course}
         onChange={handleCourse}
-      />
+      /> */}
 
       <br />
       <br />
