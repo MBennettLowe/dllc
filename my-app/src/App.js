@@ -1,6 +1,10 @@
 import './App.css';
-import SignUpForm from './components/SignUpForm';
+
 import Header from './components/Header';
+import React, { useState } from 'react';
+import SignUpForm from './components/SignUpForm';
+
+
 
 function App() {
   return (
@@ -9,6 +13,7 @@ function App() {
     <SignUpForm />
     </div>
   );
-}
+  
+  };
 
 export default App;
